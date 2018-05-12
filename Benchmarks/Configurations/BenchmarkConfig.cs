@@ -10,8 +10,8 @@ namespace Benchmarks.Configurations
         {
             Add(MemoryDiagnoser.Default);
 
-            Add(Job.ShortRun, Job.Core);
-            Add(Job.ShortRun, Job.Clr);
+            Add(new Job(BenchmarkDotNet.Jobs.RunMode.Short, EnvMode.Clr));
+            Add(new Job(BenchmarkDotNet.Jobs.RunMode.Short, EnvMode.Core));
         }
     }
 }
