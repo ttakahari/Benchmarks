@@ -8,7 +8,8 @@ namespace Benchmarks
     {
         static void Main(string[] args)
         {
-            BenchmarkRunner.Run<JsonSerializers>();
+            //BenchmarkRunner.Run<JsonSerializers>();
+            BenchmarkRunner.Run<Compressors>();
 
             Console.ReadLine();
         }
